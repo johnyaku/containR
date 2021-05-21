@@ -1,0 +1,2 @@
+R_LIBS_USER=~/R/%p/%v
+RENV_PATHS_CACHE=/renv/cache
