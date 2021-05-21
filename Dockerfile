@@ -5,7 +5,7 @@ COPY system_libraries.txt .
 RUN apt-get update \
   && xargs -a system_libraries.txt apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
-RUN R -e install.packages("renv")
+RUN R -e "install.packages('renv')"
 
 FROM dev AS prod
 COPY home/project,inflate.R /project
